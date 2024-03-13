@@ -1,0 +1,71 @@
+body {
+    background-color: #30302F  ;
+    color : white
+}
+
+.viteLogo {
+    border-radius: 50%;
+    grid-column: 1/ spans 2;
+    grid-row: 1
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.vit1 {
+    color: purple;
+    font-size: 50px;
+}
+.p1 {
+    font-size: 50px;
+}
+
+.button {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+
+}
+#button1 {
+    background-color: mediumslateblue;
+}
+.b1 {
+    border-radius: 20%;
+}
+.containerCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card {
+    background-color: #606060;
+    border: 1px solid #606060; 
+    padding: 20px; 
+    border-radius: 10px
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Cambia a 1 columna en pantallas más pequeñas */
+    }
+    .viteLogo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .container,
+    .button,
+    .containerCard {
+        grid-template-columns: 1fr; /* Cambia a 1 columna en pantallas más pequeñas */
+    }
+    
+    .button {
+        gap: 50px; /* Reducir el espacio entre botones en pantallas más pequeñas */
+    }
+    
+    .vit1,
+    .p1 {
+        font-size: 40px; /* Reducir el tamaño de la fuente en pantallas más pequeñas */
+    }
+}
+
