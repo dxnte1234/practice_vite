@@ -9,6 +9,8 @@ export default function App() {
     <>
       <Superior />
       <br></br>
+      <br></br>
+      <br></br>
       <div className ="containerCard">
         <Inferior icon="💡" title="Instant Server start" content="On demand File serving over native ESM, no bulding required!"/>
         <Inferior icon="⚡" title="Lightning Fast HMR" content="Hot Module Replacement (HMR) that stays fast regardless of app size."/>

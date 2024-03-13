@@ -4,7 +4,7 @@ export default function Inferior (props){
         
             <div>
                 <article className="card">
-                    <p>{props.icon}</p>
+                    <p className ="iconContainer">{props.icon}</p>
                     <p>{props.title}</p>
                     <p>{props.content}</p>
                 </article>
